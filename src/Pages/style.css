@@ -1,0 +1,34 @@
+/* custom.css */
+.bg-custom-gradient {
+    background: #ce3a4b;
+    background: -webkit-linear-gradient(to right, #EA384D, #D31027);
+    background: linear-gradient(to right, #EA384D, #D31027);
+  }
+  
+
+.bg-projectlist{
+    background: #353839;  
+    
+}
+
+.active-color{
+    color: #ababab;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #353839; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888888; 
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  

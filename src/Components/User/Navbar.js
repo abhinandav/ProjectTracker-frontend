@@ -7,7 +7,6 @@ import { set_authentication } from '../../redux/authenticationSlice';
 export default function Navbar() {
   const dispatch=useDispatch()
   const navigate=useNavigate()
-  const refreshToken = localStorage.getItem('refresh');
 
   const authentication_user=useSelector(state=>state.authentication_user)
 
@@ -25,12 +24,12 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-white shadow-lg border-b-2">
+    <nav className="bg-white shadow-lg border-b-2 font-mono">
     <div className="md:flex items-center justify-between py-2 px-8 md:px-12">
       <div className="flex justify-between items-center">
         <div className="text-2xl font-bold text-gray-800 md:text-3xl">
         <Link className="nav-link" to='/'>
-          <span>Brand</span>
+          <span className='font-mono font-bold'>TaskFlow</span>
         </Link>
         </div>
         <div className="md:hidden">

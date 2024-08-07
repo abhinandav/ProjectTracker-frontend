@@ -209,7 +209,7 @@ function TodoList({id,setTitle,title}) {
           `}
         </style>
 
-        <div className="fixed  -mt-20 z-10 w-full ">
+        <div className="fixed  -mt-20 z-10 w-full " >
           <form onSubmit={handleAddTodo} className="mt-3 ml-10">
             <div className="flex flex-row items-center justify-between mx-10 max-w-[1000px] ">
               <div className="relative w-full">

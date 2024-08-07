@@ -37,11 +37,13 @@ function Home() {
   return (
     <div className="w-full">
       <Navbar/>
-      <div className="flex bg-white" style={{ height: '600px' }}>
+      <div className="flex bg-white font-mono" style={{ height: '600px' }}>
         <div className="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
           <div>
             <h2 className="text-3xl font-semibold text-gray-800 md:text-4xl">Build Your New <span className="text-indigo-600">Idea</span></h2>
-            <p className="mt-2 text-sm text-gray-500 md:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi cum cupiditate ducimus, fugit harum id necessitatibus odio quam quasi, quibusdam rem tempora voluptates. Cumque debitis dignissimos id quam vel!</p>
+            <p className="mt-2 text-md text-gray-500  font-sans font-semibold">
+                Transform your innovative ideas into reality with our platform. Whether you’re launching a new project, managing a complex workflow, or simply looking to streamline your processes, our tool offers the features and flexibility you need. Enjoy an intuitive user interface, real-time collaboration, and seamless integration with your existing tools. With Task Flow, you can easily track your progress, stay organized, and achieve your goals efficiently. Say goodbye to chaos and hello to productivity!
+            </p>
             <div className="flex justify-center lg:justify-start mt-6">
             <Link className="nav-link" to={`/project/${items.id}`}>
               <span className="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" href="#">Get Started</span>

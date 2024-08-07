@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# Task Flow
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Task Flow is a modern project tracker designed to help you manage tasks, track progress, and stay organized. Built using React and Redux, this application provides an intuitive user interface and robust functionality for tracking project workflows.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Task Management:** Create, edit, and delete tasks.
+- **Project Tracking:** Organize tasks by projects and track their progress.
+- **User Authentication:** Secure login and registration.
+- **Real-time Updates:** Live chat feature for team collaboration.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:**
+  - React (18.3.1)
+  - React DOM (18.3.1)
+  - React Redux (9.1.2)
+  - React Router DOM (6.26.0)
+  - Axios (1.7.3)
+  - Boxicons (2.1.4)
+  - JWT Decode (4.0.0)
+  - React Icons (5.2.1)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Backend:**
+  - Django
+  - Corsheaders
+  - Rest_framework_simplejwt
+  - Rest_framework
 
-### `npm test`
+## Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (>=14.x)
+- Python  (>=10.x)
+- npm (>=6.x) or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+   https://github.com/abhinandav/ProjectTracker-frontend.git
+   cd ProjectTracker-frontend
+   https://github.com/abhinandav/ProjectTracker-backend.git
+   cd ProjectTracker-backend
+   python -m venv myenv
+   myenv\Scripts\activate
 
-### `npm run eject`
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Using npm:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Or using yarn:
 
-## Learn More
+    ```bash
+    yarn install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Configure environment variables:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Create a `.env` file in the root of the project and add the following variables:
 
-### Code Splitting
+    ```plaintext
+    REACT_APP_GITHUB_TOKEN=your_github_token
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Make sure to replace `your_github_token` with your actual GitHub token.
 
-### Analyzing the Bundle Size
+4. **Run the application:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Using npm:
 
-### Making a Progressive Web App
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    Or using yarn:
 
-### Advanced Configuration
+    ```bash
+    yarn start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    This will start the development server and open the application in your default browser.
 
-### Deployment
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Running Tests
 
-### `npm run build` fails to minify
+1. **Run the test suite:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Using npm:
+
+    ```bash
+    npm test
+    ```
+
+    Or using yarn:
+
+    ```bash
+    yarn test
+    ```
+
+    This will execute the test suite and display the results in the terminal.
+
+## Deployment
+
+For deploying your application, follow these steps:
+
+1. **Build the application:**
+
+    Using npm:
+
+    ```bash
+    npm run build
+    ```
+
+    Or using yarn:
+
+    ```bash
+    yarn build
+    ```
+
+    This will create a production-ready build in the `build` directory.
+
+2. **Deploy the build:**
+
+    You can deploy the build directory to any static file hosting service, such as Vercel or Netlify.
+
+

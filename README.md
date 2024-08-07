@@ -7,7 +7,6 @@ Task Flow is a modern project tracker designed to help you manage tasks, track p
 - **Task Management:** Create, edit, and delete tasks.
 - **Project Tracking:** Organize tasks by projects and track their progress.
 - **User Authentication:** Secure login and registration.
-- **Real-time Updates:** Live chat feature for team collaboration.
 
 ## Tech Stack
 

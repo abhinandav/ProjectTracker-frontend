@@ -57,10 +57,13 @@ ${completedTasks}
     }
   };
 
+
   const handleCreateGist = async () => {
     setLoading(true);
     setError(null);
     setGistCreated(false);
+    console.log('GitHub Token:', process.env.REACT_APP_GITHUB_TOKEN);
+
 
     try {
       const markdownContent = formatMarkdown();
